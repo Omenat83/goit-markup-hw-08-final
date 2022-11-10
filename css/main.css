@@ -269,15 +269,34 @@ footer .logo__studio {
 
 .order {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgr-hero.jpg");
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #c4c4c4;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (max-width: 767px) {
+  .order {
+    max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgr-hero-480.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .order {
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgr-hero-768.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .order-title {
@@ -288,6 +307,13 @@ footer .logo__studio {
   line-height: 1.36;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .order-title {
+    font-weight: 900px;
+    font-size: 26px;
+    line-height: 1.61;
+  }
 }
 
 .modal-form-title {
