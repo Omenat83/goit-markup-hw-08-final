@@ -1,0 +1,56 @@
+.examples h2 {
+  color: $title-color;
+  @include text-style(700, 18px, 2);
+  letter-spacing: 0.06em;
+}
+.portffolio-title-about {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.example-name {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.example-project {
+  display: block;
+  width: 370px;
+  transition: box-shadow $trans-general;
+
+&:hover,
+&:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+.example-project:hover .example-project-about,
+.example-project:focus .example-project-about {
+  transform: translateY(-100%);
+}
+.example-project-pict {
+  overflow: hidden;
+}
+.example-project-about {
+  position: absolute;
+  display: block;
+  transition: transform $trans-general;
+  width: 370px;
+  height: 294px;
+  top: 100%;
+  left: 0;
+  padding: 63px 24px;
+  @include text-style(400, 18px, 1.55);
+  color: $basic-white;
+  background: rgba(33, 150, 243, 0.8);
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 30px;
+}
+.portfolio-title {
+  margin-bottom: 4px;
+}

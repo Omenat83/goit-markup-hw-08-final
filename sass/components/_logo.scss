@@ -1,0 +1,24 @@
+.logo {
+  display: block;
+  padding: 24px 0;
+}
+
+.logo__web {
+  color: $main-color-decor;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo__studio {
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  footer & {
+    color: $basic-white;
+  }
+}

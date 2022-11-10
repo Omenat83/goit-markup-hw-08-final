@@ -1,0 +1,48 @@
+.team {
+  display: flex;
+  gap: 30px;
+}
+.team-member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  min-width: 270px;
+  background-color: $basic-white;
+  text-align: center;
+}
+.team-member__description {
+  padding: 30px 0;
+}
+.team-member__name {
+  color: $title-color;
+  @include text-style(500, 16px, 1.19);
+  margin-bottom: 10px;
+}
+.team-member__profession {
+  margin-bottom: 16px;
+}
+.section--bcgr {
+  background-color: $bckgr-milk;
+}
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-networks__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  fill: $icon-svg-color;
+  border-color: $icon-svg-color;
+  transition: background-color $trans-general, fill $trans-general;
+
+&:hover,
+&:focus {
+  background-color: $main-color-decor;
+  fill: $basic-white;
+}
+}

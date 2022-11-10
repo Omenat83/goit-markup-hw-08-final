@@ -1,0 +1,22 @@
+.main-clients {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.main-clients__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $icon-svg-color;
+  border-radius: 4%;
+  align-items: center;
+  justify-content: center;
+  fill: $icon-svg-color;
+  transition: border $trans-general, fill $trans-general;
+
+&:hover,
+&:focus {
+  fill: $main-color-decor;
+  border: 1px solid $main-color-decor;
+}
+}
