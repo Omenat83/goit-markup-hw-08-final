@@ -526,6 +526,18 @@ footer .logo__studio {
   background: rgba(47, 48, 58, 0.8);
 }
 
+.products {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .section.null {
+    display: none;
+  }
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
