@@ -1,11 +1,23 @@
 .main-clients {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   justify-content: center;
+}
+.main-clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .main-clients__link {
   display: flex;
-  width: 170px;
+  // min-width: 100px;
   height: 92px;
   border: 1px solid $icon-svg-color;
   border-radius: 4%;
@@ -14,9 +26,9 @@
   fill: $icon-svg-color;
   transition: border $trans-general, fill $trans-general;
 
-&:hover,
-&:focus {
-  fill: $main-color-decor;
-  border: 1px solid $main-color-decor;
-}
+  &:hover,
+  &:focus {
+    fill: $main-color-decor;
+    border: 1px solid $main-color-decor;
+  }
 }

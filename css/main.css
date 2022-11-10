@@ -663,12 +663,26 @@ footer .logo__studio {
 .main-clients {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   justify-content: center;
+}
+
+.main-clients__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .main-clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .main-clients__link {
   display: flex;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4%;
