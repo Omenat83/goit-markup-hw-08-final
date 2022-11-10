@@ -1,5 +1,11 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
+  <symbol id="icon-menu-mobile" viewBox="0 0 32 32">
+<path d="M6.401 11.736v-2.134h19.203v2.134h-19.203zM6.401 17.069h19.203v-2.133h-19.203v2.133zM6.401 22.404h19.203v-2.134h-19.203v2.134z"></path>
+</symbol>
+<symbol id="icon-menu-mobile-close" viewBox="0 0 32 32">
+<path d="M23.738 10.306l-1.504-1.504-5.964 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.964 1.504 1.504 5.963-5.964 5.964 5.964 1.504-1.504-5.964-5.964 5.964-5.963z"></path>
+</symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
 <path d="M26.667 9.081l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
 </symbol>

@@ -35,8 +35,6 @@
   top: 50%;
   left: 50%;
   transform: scale(1) translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   padding: 40px 39px 40px 41px;
   background: $basic-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -46,6 +44,21 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  @media screen and (max-width: 479px) {
+    min-width: 250px;
+    width: calc(100% - 30px);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1999px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
   }
 }
 .modal-input {
@@ -96,9 +109,14 @@
   justify-content: center;
   justify-content: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   fill: transparent;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 
   & .test {
     display: flex;
@@ -121,4 +139,9 @@
 .modal-policy {
   padding-left: 5px;
   color: $main-color-decor;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

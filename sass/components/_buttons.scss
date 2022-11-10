@@ -70,3 +70,24 @@
   fill: $basic-white;
   gap: 10px;
 }
+.menu-mobile-open,
+.menu-mobile-close {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: $basic-white;
+  border: none;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    fill: $main-color-decor;
+  }
+
+  @media screen and (min-width:768px) {
+    display: none;    
+  }
+}
