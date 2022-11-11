@@ -64,11 +64,18 @@
   }
 }
 .button-plane {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  right: calc((100% - 200px) / 2);
+  bottom: -70px;
   fill: $basic-white;
   gap: 10px;
+  height: 50px;
+  max-width: 200px;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 .menu-mobile-open,
 .menu-mobile-close {
@@ -87,7 +94,7 @@
     fill: $main-color-decor;
   }
 
-  @media screen and (min-width:768px) {
-    display: none;    
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
