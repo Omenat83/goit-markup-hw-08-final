@@ -14,17 +14,26 @@
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
+
 .example-project {
   display: block;
-  width: 370px;
+  // width: 370px;
+  width: 100%;
   transition: box-shadow $trans-general;
+
+  @media screen and (min-width:480px) {
+    width: 480px;    
+  }
 
 &:hover,
 &:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+
 }
+
 .example-project:hover .example-project-about,
 .example-project:focus .example-project-about {
   transform: translateY(-100%);
@@ -36,14 +45,19 @@
   position: absolute;
   display: block;
   transition: transform $trans-general;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  // width: 370px;
+  // height: 294px;
   top: 100%;
   left: 0;
   padding: 63px 24px;
   @include text-style(400, 18px, 1.55);
   color: $basic-white;
   background: rgba(33, 150, 243, 0.8);
+
+  @media screen and (min-width:480px) {
+    width: 480px;    
+  }
 }
 .portfolio {
   display: flex;

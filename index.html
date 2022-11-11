@@ -149,15 +149,21 @@
         <h2 class="section__title">Чим ми займаємося</h2>
         <ul class="products list">
           <li class="posit-relat">
-            <img class="make-block" src="./images/box1.jpg" alt="keyboard" width="370" />
+            <img class="make-block" srcset="
+            ./images/box1.jpg 1x,
+            ./images/box1-2x.jpg 2x" src="./images/box1.jpg" alt="keyboard" width="370" />
             <p class="products__title">десктопні додатки</p>
           </li>
           <li class="posit-relat">
-            <img class="make-block" src="./images/box2.jpg" alt="laptop" width="370" />
+            <img class="make-block" srcset="
+            ./images/box2.jpg 1x,
+            ./images/box2-2x.jpg 2x" src="./images/box2.jpg" alt="laptop" width="370" />
             <p class="products__title">мобільні додатки</p>
           </li>
           <li class="posit-relat">
-            <img class="make-block" src="./images/box3.jpg" alt="rainbow" width="370" />
+            <img class="make-block" srcset="
+            ./images/box3.jpg 1x,
+            ./images/box3-2x.jpg 2x" src="./images/box3.jpg" alt="rainbow" width="370" />
             <p class="products__title">дизайнерські рішення</p>
           </li>
         </ul>
@@ -170,7 +176,16 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="list team">
           <li class="team-member">
-            <img class="make-block" src="./images/teamcard1.jpg" alt="Ihor" width=100% />
+            <picture>
+              <source srcset="./images/teamcard1.jpg 1x,
+            ./images/teamcard1-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/teamcard1-768.jpg 1x,
+                          ./images/teamcard1-768-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teamcard1-480.jpg 1x,
+                          ./images/teamcard1-480-2x.jpg 2x" media="(min-width: 480px)" />
+              <img class="make-block" src="./images/teamcard1.jpg" alt="Ihor" width=100% />
+            </picture>
+
             <div class="team-member__description">
               <h3 class="team-member__name">Ігор Дем'яненко</h3>
               <p class="team-member__profession">Product Designer</p>
@@ -207,7 +222,15 @@
             </div>
           </li>
           <li class="team-member">
-            <img class="make-block" src="./images/teamcard2.jpg" alt="Olha" width=100% />
+            <picture>
+              <source srcset="./images/teamcard2.jpg 1x,
+                        ./images/teamcard2-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/teamcard2-768.jpg 1x,
+                                      ./images/teamcard2-768-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teamcard2-480.jpg 1x,
+                                      ./images/teamcard2-480-2x.jpg 2x" media="(min-width: 480px)" />
+              <img class="make-block" src="./images/teamcard2.jpg" alt="Ihor" width=100% />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__name">Ольга Рєпіна</h3>
               <p class="team-member__profession">Frontend Developer</p>
@@ -244,7 +267,15 @@
             </div>
           </li>
           <li class="team-member">
-            <img class="make-block" src="./images/teamcard3.jpg" alt="Nikolas" width=100% />
+            <picture>
+              <source srcset="./images/teamcard3.jpg 1x,
+                        ./images/teamcard3-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/teamcard3-768.jpg 1x,
+                                      ./images/teamcard3-768-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teamcard3-480.jpg 1x,
+                                      ./images/teamcard3-480-2x.jpg 2x" media="(min-width: 480px)" />
+              <img class="make-block" src="./images/teamcard3.jpg" alt="Ihor" width=100% />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__name">Микола Тарасов</h3>
               <p class="team-member__profession">Marketing</p>
@@ -281,7 +312,15 @@
             </div>
           </li>
           <li class="team-member">
-            <img class="make-block" src="./images/teamcard4.jpg" alt="Michael" width=100% />
+            <picture>
+              <source srcset="./images/teamcard4.jpg 1x,
+                        ./images/teamcard4-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/teamcard4-768.jpg 1x,
+                                      ./images/teamcard4-768-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teamcard4-480.jpg 1x,
+                                      ./images/teamcard4-480-2x.jpg 2x" media="(min-width: 480px)" />
+              <img class="make-block" src="./images/teamcard4.jpg" alt="Ihor" width=100% />
+            </picture>
             <div class="team-member__description">
               <h3 class="team-member__name">Михайло Єрмаков</h3>
               <p class="team-member__profession">UI Designer</p>
