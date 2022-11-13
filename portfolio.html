@@ -26,7 +26,7 @@
           <li><a href="" class="site-nav__link link">Контакти</a></li>
         </ul>
       </nav>
-  
+
       <div class="nav-contacts">
         <a class="nav-contacts__link link nav-contacts__link--mail" href="mailto:info@devstudio.com">
           <svg class="nav-contacts__icon" width="16" height="12">
@@ -45,17 +45,17 @@
         </svg>
       </button>
     </div>
-  
+
     <div class="mob-menu is-hidden" data-menu>
       <div class="container">
-  
+
         <div class="mob-menu__top">
           <button type="button" class="menu-mobile-close" data-menu-close>
             <svg class="" width="40" height="40">
               <use href="./images/icons.svg#icon-menu-mobile-close"></use>
             </svg>
           </button>
-  
+
           <ul class="mob-menu__list list">
             <li class="mob-menu__item">
               <a href="./index.html" class="mob-menu__link link">Студія</a>
@@ -68,7 +68,7 @@
             </li>
           </ul>
         </div>
-  
+
         <div class="mob-menu-bottom">
           <div class="mob-contacts">
             <a class="mob-contacts__tel link" href="mailto:info@devstudio.com">
@@ -76,7 +76,7 @@
             <a class="mob-contacts__mail link" href="tel:+380961111111">
               info@devstudio.com</a>
           </div>
-  
+
           <ul class="mob-social list">
             <li class="mob-social__item">
               <a class="mob-social__link link" href="" rel="noopener noreferrer nofollow" target="_blank">
@@ -103,7 +103,7 @@
             </li>
           </ul>
         </div>
-  
+
       </div>
     </div>
   </header>
@@ -126,14 +126,22 @@
           <li>
             <a class="example-project link" href="">
               <div class="posit-relat example-project-pict">
-                <img class="make-block " src="./images/portfolio/port1.jpg" alt="монітор">
+                <picture>
+                  <source srcset="./images/portfolio/port1.jpg 1x,
+                                ./images/portfolio/port1-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port1-768.jpg 1x,
+                                ./images/portfolio/port1-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port1-480.jpg 1x,
+                                ./images/portfolio/port1-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port1.jpg" alt="монітор" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               </div>
-              <div class="example-name">
+              <div class="example-name example-name--hight">
                 <h2 class="portfolio-title">Технокряк</h2>
                 <p class="portffolio-title-about">Веб-сайт</p>
               </div>
@@ -143,7 +151,15 @@
           <li>
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port2.jpg" width="370" alt="баскетболісти">
+                <picture>
+                  <source srcset="./images/portfolio/port2.jpg 1x,
+                                ./images/portfolio/port2-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port2-768.jpg 1x,
+                                ./images/portfolio/port2-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port2-480.jpg 1x,
+                                ./images/portfolio/port2-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port2.jpg" alt="баскетбол" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати
@@ -160,7 +176,15 @@
           <li>
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port3.jpg" width="370" alt="риба">
+                <picture>
+                  <source srcset="./images/portfolio/port3.jpg 1x,
+                                                ./images/portfolio/port3-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port3-768.jpg 1x,
+                                                ./images/portfolio/port3-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port3-480.jpg 1x,
+                                                ./images/portfolio/port3-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port3.jpg" alt="риба" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -178,7 +202,15 @@
           <li class="">
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port4.jpg" width="370" alt="навушники">
+                <picture>
+                  <source srcset="./images/portfolio/port4.jpg 1x,
+                                ./images/portfolio/port4-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port4-768.jpg 1x,
+                                ./images/portfolio/port4-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port4-480.jpg 1x,
+                                ./images/portfolio/port4-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port4.jpg" alt="навушники" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -196,7 +228,15 @@
           <li class="">
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port5.jpg" width="370" alt="коробки">
+                <picture>
+                  <source srcset="./images/portfolio/port5.jpg 1x,
+                                ./images/portfolio/port5-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port5-768.jpg 1x,
+                                ./images/portfolio/port5-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port5-480.jpg 1x,
+                                ./images/portfolio/port5-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port5.jpg" alt="коробки" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -214,7 +254,15 @@
           <li class="">
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port6.jpg" width="370" alt="монітор">
+                <picture>
+                  <source srcset="./images/portfolio/port6.jpg 1x,
+                                ./images/portfolio/port6-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port6-768.jpg 1x,
+                                ./images/portfolio/port6-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port6-480.jpg 1x,
+                                ./images/portfolio/port6-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port6.jpg" alt="монітор" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -232,7 +280,15 @@
           <li class="">
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port7.jpg" width="370" alt="книга">
+                <picture>
+                  <source srcset="./images/portfolio/port7.jpg 1x,
+                                ./images/portfolio/port7-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port7-768.jpg 1x,
+                                ./images/portfolio/port7-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port7-480.jpg 1x,
+                                ./images/portfolio/port7-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port7.jpg" alt="книга" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -250,7 +306,15 @@
           <li class="">
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port8.jpg" width="370" alt="бірка">
+                <picture>
+                  <source srcset="./images/portfolio/port8.jpg 1x,
+                                ./images/portfolio/port8-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port8-768.jpg 1x,
+                                ./images/portfolio/port8-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port8-480.jpg 1x,
+                                ./images/portfolio/port8-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port8.jpg" alt="бірка" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -268,7 +332,15 @@
           <li class="">
             <a href="" class="link example-project">
               <div class="posit-relat example-project-pict">
-                <img class="make-block" src="./images/portfolio/port9.jpg" width="370" alt="лаптоп">
+                <picture>
+                  <source srcset="./images/portfolio/port9.jpg 1x,
+                                ./images/portfolio/port9-2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="./images/portfolio/port9-768.jpg 1x,
+                                ./images/portfolio/port9-768-2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="./images/portfolio/port9-480.jpg 1x,
+                                ./images/portfolio/port9-480-2x.jpg 2x" media="(min-width: 480px)" />
+                  <img class="make-block" src="./images/portfolio/port9.jpg" alt="лаптоп" width=100% />
+                </picture>
                 <div class="example-project-about">
                   <p class="example-project-about">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це
@@ -290,7 +362,7 @@
   <footer class="footer">
     <div class="container footer-main">
       <div class="footer-main-left">
-  
+
         <div class="footer-main-left--left">
           <a href="./index.html" class="link make-block"><span class="logo__web">Web</span><span
               class="logo__studio">Studio</span></a>
@@ -298,7 +370,8 @@
             <ul class="list">
               <li class="contacts-list"><a href="" class="link footer-contacts">м. Київ, пр-т Лесі Українки, 26</a></li>
               <li class="contacts-list">
-                <a href="mailto:info@devstudio.com" class="link footer-contacts footer-transparent">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com"
+                  class="link footer-contacts footer-transparent">info@devstudio.com</a>
               </li>
               <li class="contacts-list">
                 <a href="tel:+380961111111" class="link footer-contacts footer-transparent">+38 096 111 11 11</a>
@@ -306,7 +379,7 @@
             </ul>
           </address>
         </div>
-  
+
         <div class="footer-soc footer-main-left--right">
           <p class="footer-soc-title">ПРИєднуйтесь</p>
           <ul class="footer-soc-main list">
@@ -341,7 +414,7 @@
           </ul>
         </div>
       </div>
-  
+
       <div class="footer-main-right">
         <form class="form-subscribe">
           <label>
